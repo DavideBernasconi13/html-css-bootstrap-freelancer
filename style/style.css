@@ -1,10 +1,46 @@
 /* -------------------------------------------------------------------------------- */
 /* ! Helpers and development */
 /* -------------------------------------------------------------------------------- */
-.debug {
+.db-debug {
     border: 1px solid red;
 }
 
-.even {
+/* Color custom */
+.odd {
     background-color: #1ABC9C;
+}
+
+.footer-bottom {
+    background-color: #2C3E50;
+}
+
+/* Card */
+.card-r {
+    position: relative;
+}
+
+.card {
+    cursor: pointer;
+}
+
+.card:after {
+    content: '\2b';
+    font-size: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #17c19f95;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.card:hover.card:after {
+    opacity: 1;
+    transition: 0.4s;
 }

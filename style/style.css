@@ -4,3 +4,7 @@
 .debug {
     border: 1px solid red;
 }
+
+.even {
+    background-color: #1ABC9C;
+}
